@@ -19,8 +19,8 @@ function App() {
  
 
     
-    {/* <Alert/> */}
-    {/* <Navbar text1="textutils" text2=" this"  /> */}
+    <Alert/>
+    <Navbar text1="textutils" text2=" this"  />
     <Textform title='text box'/>
     </>
   );

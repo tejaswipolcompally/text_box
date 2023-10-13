@@ -23,7 +23,7 @@ const toogleStyle = () => {
     else {
           setMyStyle({
               color: 'black',
-              backgroundColor: 'white'
+              backgroundColor: 'white',
           })
           setBtnText("Enable Dark Mode")
       }

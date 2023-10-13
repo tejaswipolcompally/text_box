@@ -13,14 +13,23 @@ export default function Textform(props) {
     })
     const[btnText, setBtnText] = useState("Enable Dark mode");
     const toogleStyle = () => {
+      let x = document.getElementById('root')
         if (myStyle.color === "black") {
+          
+          x.style.backgroundColor='black'
+          x.style.height='100%'
+          x.style.width='100%'
             setMyStyle({
                 color: "white",
                 backgroundColor: "black",
                 border: "1px solid white",
+               
               })
               setBtnText("Enable Light Mode")}
         else {
+          x.style.backgroundColor='white'
+          x.style.height='100%'
+          x.style.width='100%'
               setMyStyle({
                   color: 'black',
                   backgroundColor: 'white'
@@ -59,7 +68,7 @@ export default function Textform(props) {
     
   return (
     <>
-<div className="root" style={myStyle}>
+<div className="myclass" style={myStyle}>
     <h1>{props.title}</h1>
   <label for="exampleFormControlTextarea1" className="form-label">Example text area -{text}</label>
   <textarea className="form-control"  id="exampleFormControlTextarea1" value={text} onChange={l} rows="10"></textarea>
