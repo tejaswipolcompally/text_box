@@ -14,13 +14,13 @@ function App() {
     for example only div tag and inside elemenets can be returned 
     if u wanted several other tags to be returned use <> at beggining and </> at end
     <> is called jsx fragment */}
-    {/* <h1>hello world {name}</h1> */}
+    <h1>hello world {name}</h1>
     {/* curly brackket inside variable */}
  
 
     
-    {/* <Alert/> */}
-    {/* <Navbar text1="textutils" text2=" this"  /> */}
+    <Alert/>
+    <Navbar text1="textutils" text2=" this"  />
     <Textform title='text box'/>
     </>
   );
